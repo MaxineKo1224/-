@@ -1,0 +1,42 @@
+<C++>
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin >> n;
+    if( n<1 || n>10)
+        return -1;
+    for(int i = 1; i<10; i++){
+        cout<<n<<" * "<<i<<" = "<<n*i<<'\n';
+    }
+}
+
+
+<Python>
+n = int(input())
+for i in range(1,10):
+    print(n, "*", i, "=", n*i)
+    
+    
+    
+<Java>
+//역시나 자바는 공부하는 중이라 문법을 구글링 해가며 다른 사람의 알고리즘 코드를 참고했다.
+//문법 공부 할때 참고한 좋은 사이트 https://www.w3schools.com/java/java_user_input.asp
+//user input을 위해서는 Scanner라는게 필요하다. 
+//The Scanner class is used to get user input, and it is found in the java.util package.
+
+import java.util.*;
+public class Main{ //m이 대문자여야됨...ㄷㄷ?
+    public static void main(String[] args){
+        Scanner num = new Scanner(System.in); // // Create a Scanner object
+        
+        int number = num.nextInt(); //string 입력 받을땐 nextLine();
+        
+        for(int i = 1; i<10; i++){
+            System.out.println(number+" * "+i+" = "+number*i);
+        }
+    }
+}
+    
+    
+
